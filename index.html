@@ -3,31 +3,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Google Maps JavaScript API Example</title>
+    <title>GeoChallenge</title>
 
-    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyCMhyMlZ3iaVmEqnnlYXhR5i9JHAT0XzPk&sensor=true_or_false"
-            type="text/javascript"></script>
-    <script type="text/javascript">
-      function load_map(latitude, longitude) {
-        if (GBrowserIsCompatible()) {
-          var map = new GMap2(document.getElementById("map_canvas"));
-          map.setCenter(new GLatLng(latitude, longitude), 13);
-          map.setUIToDefault();
-        }
-      }
-    </script>
+    <link href="application.css" media="screen" rel="stylesheet" type="text/css" />
+
     <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyCMhyMlZ3iaVmEqnnlYXhR5i9JHAT0XzPk&sensor=true_or_false" type="text/javascript"></script>
     <script type="text/javascript" src="country_data.js"></script>
     <script type="text/javascript" src="application.js"></script>
   </head>
-  <body onload="load_map(37.4419, -122.1419)" onunload="GUnload()">
+  <body>
     <div id="container">
-      <div id="question" style="height: 50px;"></div>
-      <input type="text" id="capital" size="30">
-      <input type="submit" id="submit">
-      <input type="submit" id="next" value="Next Question">
+      <div id="map_container">
+        <div id="map_canvas"></div> 
+      </div>
+      <div id="question_container">
+        <span id="question"></span>
+        <input type="text" id="users_answer" size="30">
+        <input type="submit" id="submit">
+        <span id="next_question_container">
+          <input type="submit" id="next_question" value="Next Question">
+        </span>
+      </div>
+      <div id="answer_container">
+        <div id="answer"></div>
+      </div>
     </div>
-    <div id="answer" style="height: 50px;"></div>
-    <div id="map_canvas" style="width: 500px; height: 300px"></div>
   </body>
 </html>
