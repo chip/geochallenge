@@ -1,0 +1,29 @@
+GeoChallenge - A simple quiz for learning the capitals of countries
+
+The app asks a simple question: 
+What is the capital of __a_random_country__?
+
+Upon answering the question and clicking submit, you receive a 
+correct/incorrect response.
+
+For correct answers, a Google Map is reloaded for the capital and country.
+
+TODO:
+
+Select a better initial Google Map
+Allow case-insensitive answers to be submitted
+Track scores with HTML5 localStorage
+Show progress: You have answered 21 out of 278 questions.  Accuracy: 75%.
+Prevent questions from being asked more than once
+Clear session
+Enlarge map
+Provide map marker for capital
+Make zoom level much smaller
+Improve layout and typeface
+Hide seed data?
+Jasmine tests
+Provide reverse quiz => __some_random_capital__ is the capital of what country?
+Put on Heroku
+
+Tools: CoffeeScript, HTML 
+
