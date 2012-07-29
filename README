@@ -10,15 +10,11 @@ For correct answers, a Google Map is reloaded for the capital and country.
 
 TODO:
 
-Select a better initial Google Map
-Allow case-insensitive answers to be submitted
 Track scores with HTML5 localStorage
 Show progress: You have answered 21 out of 278 questions.  Accuracy: 75%.
 Prevent questions from being asked more than once
 Clear session
-Enlarge map
-Provide map marker for capital
-Make zoom level much smaller
+
 Improve layout and typeface
 Hide seed data?
 Jasmine tests
