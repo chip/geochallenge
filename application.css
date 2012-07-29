@@ -1,0 +1,26 @@
+#body {
+  font-family: Verdana, Geneva, sans-serif,
+  font-size: 68px;
+  font-weight: bold;
+}
+#container {
+  width: 1040px;
+  text-align: center;
+}
+#question_container, #answer_container {
+  height: 25px;
+  padding: 10px;
+}
+#answer {
+  font-size: 68px;
+  font-weight: bold;
+}
+#next_question_container {
+  text-align: right;
+}
+#map_container {
+  text-align: center;
+}
+#map_canvas {
+  height: 500px;
+}
